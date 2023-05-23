@@ -1,0 +1,68 @@
+.users-container {
+  width: 35vw;
+  height: 65vh;
+  background-color: #3a5658;
+  padding: 2rem;
+  margin-top: 2rem;
+  color: white;
+  border-radius: 10px;
+  box-shadow: -4px 5px 10px 0 #2c2c2c;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+fieldset {
+  width: 30vw;
+  height: 12vh;
+  padding: 2rem;
+  margin-top: 1.5rem;
+  border-radius: 10px;
+  color: #ffffff;
+  border-color: #eb6440;
+  box-shadow: -3px 3px 4px 0px #1c1c1c;
+  background-color: #2f4a4c;
+}
+
+legend {
+  color: #ffc760;
+}
+
+.total-users,
+.age-num {
+  color: #f88a6c;
+  font-weight: 700;
+}
+
+.user-info {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.user-info span {
+  font-size: 0.8rem;
+}
+
+@media (max-width: 991px) {
+  .users-container {
+    width: 95vw;
+  }
+  fieldset {
+    width: 60vw;
+    overflow: hidden;
+  }
+}
+@media (max-width: 426px) {
+  .users-container {
+    width: 95vw;
+    margin-bottom: 2rem;
+  }
+  fieldset {
+    width: 90vw;
+    padding: 2rem;
+    margin-top: 1.5rem;
+  }
+}
